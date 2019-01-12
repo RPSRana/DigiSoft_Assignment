@@ -2,6 +2,8 @@ import glob
 import os
 import pydicom
 
+#Reading dcm files using pydicom library
+#Function to return Dicom tags
 def DicomTags(path):
     dataset = pydicom.dcmread(path)
     Dicom_tags = list(dataset.keys())
